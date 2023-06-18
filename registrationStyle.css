@@ -16,9 +16,9 @@ body {
     display: inline-block;
 }
 
-#login_form {
+#registration_form {
     width: 500px;
-    height: 456px;
+    height: auto;
     border-color: #fff;
     border-style: groove;
     border-radius: 25%;
@@ -33,7 +33,7 @@ img {
     width: 10%;
     height: auto;
   }
-#login_form:hover {
+#registration_form:hover {
     box-shadow: 10px 10px 10px 10px rgba(255, 255, 255, 0.781);
 }
 
@@ -102,7 +102,7 @@ button:hover {
     cursor: pointer;
 }
 
-#login_form .message {
+#registration_form .message {
     padding: 25px 25px;   
     margin: 15px 0 0;
     color: #b3b3b3;
@@ -110,13 +110,13 @@ button:hover {
     transition: 0.3s;
   }
 
-  #login_form .message a {
+  #registration_form .message a {
     color: #4CAF50;
     text-decoration: none;
 
   }
 
-  #login_form .message:hover{
+  #registration_form .message:hover{
     background-color: none;
     font-size: 18px;
     transform: scale(1, 1);

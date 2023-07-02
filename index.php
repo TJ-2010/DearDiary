@@ -60,7 +60,7 @@
         <table class="table table-bordered">
             <thead>
                 <tr>
-                    <th>#</th>
+                    <!--<th>#</th> -->
                     <th>Title</th>
                     <th>Date</th>
                     <th>Description</th>
@@ -75,7 +75,7 @@
         while($data = mysqli_fetch_array($result)){
             ?>
             <tr>
-                <td><?php echo $data['id']; ?></td>
+                <!--<td><?php echo $data['id']; ?></td>-->
                 <td><?php echo $data['title']; ?></td>
                 <td><?php echo $data['date']; ?></td>
                 <!--<td><?php echo $data['description']; ?></td> -->

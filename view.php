@@ -5,24 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="indexStyle.css">
     <title>Contents Details</title>
-    <style>
-        .book-details{
-            background-color:#f5f5f5;
-        }        
-    </style>
 </head>
 <body>
     <div class="container">
         <header class="d-flex justify-content-between my-4">
-            <h1>Contents Details</h1>
             <div>
-                <a href="index.php" class="btn btn-primary">Back</a>
+                <h1> Self-love is gay  ღ(ゝ◡╹)ノ♡</h1>
+                <h1> (ノ^_^)ノ  Hate-yourself</h1>
             </div>
 
+            <div>
+                <a href="index.php" class="btn btn-info">Back</a>
+            </div>
         </header>
 
-        <div class="book-details my-4">
+        <div class="book-details">
             <?php
                 #echo $_GET["id"]; #will show the id of the data from the table
                 if (isset($_GET["id"])) {

@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="indexStyle.css">
     <title>Edit Contents</title>
 
 </head>
 <body>
     <div class="container">
         <header class="d-flex justify-content-between my-4">
-            <h1>Edit Contents</h1>
+            <h1>Edit Your Entry (｡•̀ᴗ-)✧</h1>
             <div>
-                <a href="index.php" class="btn btn-primary">Back</a>
+                <a href="index.php" class="btn btn-info">Back</a>
             </div>
 
         </header>
@@ -41,7 +42,15 @@
             </div>
             <input type="hidden" name="id" value="<?php echo $row["id"]; ?>">
             <div class="form-element">
-                <input type="submit" class="btn btn-success" name="edit" value="Edit Content:">
+                <input type="submit" style="animation: bg-color 10s infinite;
+                border-radius: 10px;
+                background-color: white;
+                color: white;
+                border: 2px solid green;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;" class="btn btn-info" name="edit" value="Edit Content:">
             </div>
         </form>
 

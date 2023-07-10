@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="indexStyle.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Content List</title>
 </head>
 <body>
     <div class="container">
-        <header class="d-flex justify-content-between my-4">
-            <h1>Add new Content</h1>
-            <div>
-                <a href="create.php" class="btn btn-primary">Add New Content</a>
+        <header class="header">
+            <div class="box">
+                <a href="create.php" class="btn btn-info">Add New Entry</a>
+                <a href="about.html" class="btn btn-info" style="justify-content: left;">About</a>
             </div>
         </header>
 
@@ -63,7 +64,7 @@
                     <!--<th>#</th> -->
                     <th>Title</th>
                     <th>Date</th>
-                    <th>Description</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -82,8 +83,8 @@
             
                 <td>
                     <a href="view.php?id=<?php echo $data['id']; ?>" class="btn btn-info">Read More</a>
-                    <a href="edit.php?id=<?php echo $data['id']; ?>" class="btn btn-warning">Edit</a>
-                    <a href="delete.php?id=<?php echo $data['id']; ?>" class="btn btn-danger">Delete</a>
+                    <a href="edit.php?id=<?php echo $data['id']; ?>" class="btn btn-info">Edit</a>
+                    <a href="delete.php?id=<?php echo $data['id']; ?>" class="btn btn-info">Delete</a>
                 </td>
             </tr>
             <?php
@@ -94,6 +95,13 @@
 
         </table>
     </div>
-    
+         <footer>
+            <div class="ticker-wrap">
+                <div class="ticker">
+                  <div class="ticker__item">-------------------------------------------------</div>
+                  <div class="ticker__item">There's something inside you It's hard to explain</div>
+                  <div class="ticker__item">-------------------------------------------------</div>
+                </div>
+        </footer>   
 </body>
 </html>
